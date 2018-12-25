@@ -1,0 +1,10 @@
+const argv = yargs
+.command("add", "Adds a new Note", {
+    title:{
+        describe:"Title of Note",
+        demand:true,
+        alias:"t"
+    }
+})
+.help()
+.argv;

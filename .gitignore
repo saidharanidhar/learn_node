@@ -1,0 +1,24 @@
+# Ignore generated directories
+node_modules
+*/node_modules
+.env
+env.json
+out
+env.json
+package-lock.json
+*.DS_Store
+# Ignore generated files
+*~
+*.DS_Store
+__tests__/__snapshots__/
+
+# Ignore other specific files
+npm-debug.log
+.idea
+# Byte-compiled / optimized / DLL files
+
+# PyCharm Folders
+
+# VS Code Folders
+.vscode
+

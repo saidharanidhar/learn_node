@@ -1,0 +1,25 @@
+const square = (x) =>{
+    return x * x;
+};
+
+const square = x => x * x;
+
+const user = {
+    name:"Arrow",
+    sayHi: () => {
+        console.log(arguments);
+        consol.log(`Hi ${this.name}`);
+    },
+    sayHiRegular (){
+        console.log(arguments);
+        consol.log(`Hi ${this.name}`);
+    }
+}
+
+user.sayHi(); // prints global arguments and this.name as undefined.
+user.sayHi(1, 2, 3); // prints global arguments and this.name as undefined.
+user.sayHiRegular(); // prints arguments as {} and this.name as Arrow.
+user.sayHiRegular(1, 2, 3); // prints arguments as {'0':1, '1':2, '2':3} and this.name as Arrow.
+
+// Notes:
+// this won't work on Arrow functions
